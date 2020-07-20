@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  
+  <meta charset="UTF-8">
+  <title>CodePen - Parallax Depth Cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 class="title">Click the cards and listen</h1>
+<section style = "color:red; position: absolute;width:100%;height:100%; background-image: url('https://im0-tub-ru.yandex.net/i?id=7b974052ad48ea1b3fb7d64bdacfceb2&n=13');opacity:0%;"></section>
+<div id="app" class="container">
+  <card id = 'rick' data-image="https://i.imgur.com/TaGzCA6.png">
+    <h1 slot="header">Rick Sanchez</h1>
+    <p slot="content">Rick confesses to Morty about his only passion</p>
+  </card>
+  <card   id = 'morty' data-image="https://i.imgur.com/NY6qzwd.png">
+    <h1 slot="header">Morty Smith</h1>
+    <p slot="content">"I'm alive" - The best speech about being a robot in the humanity world.</p>
+  </card>
+  <card id='sound' data-image="https://media.giphy.com/media/XgHGfkACG7RWPnVUZo/giphy.gif">
+    <h1 slot="header">play FUTURE</h1>
+    <p slot="content">sonds like damn damn hot hot hot hot hot</p>
+  </card>
+
+</div>
+<div class="vid"><iframe class = 'morty' id='mortyvid' width="560" height="315" src="https://www.youtube.com/embed/mr3TEC3_ets?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+ <!-- partial --></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
